@@ -302,6 +302,6 @@ async def on_command_error(ctx, error):
   await ctx.reply(f"An error occured: {str(error)}")
 
 keep_alive.keep_alive()
-token = os.environ.get("TOKEN")
+token = os.environ.get("DISCORD_TOKEN")
 # Run the client on the server
 client.run(os.environ["DISCORD_TOKEN"])
