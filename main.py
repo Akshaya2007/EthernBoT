@@ -303,3 +303,5 @@ async def on_command_error(ctx, error):
 
 keep_alive.keep_alive()
 token = os.environ.get("TOKEN")
+# Run the client on the server
+client.run("token")
